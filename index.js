@@ -49,3 +49,27 @@ app.get("/", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`server run at ${PORT}`);
 });
+
+// Once you have created a tarball or zip file of your Express.js application, 
+// you can use it to easily deploy your application to a production environment.
+
+
+// # Create a tarball of your project
+// tar -zcvf online-banking-database-design-app.tar.gz *
+
+
+
+// Once you have created the tarball, you can then set up a folder on your production 
+// server where you can store the tarball and other necessary files. This might be a 
+// folder such as /var/www/my-node-app, for example.
+
+// Next, you will need to upload the tarball to the production server and extract it into the 
+// appropriate folder. This can be done using the scp and tar commands, respectively:
+
+
+// # Upload the tarball to the production server
+// scp my-node-app.tar.gz user@my-production-server:/var/www/my-node-app
+
+// # Extract the tarball on the production server
+// ssh user@my-production-server
+// tar -xvf /var/www/my-node-app/my-node-app.tar.gz -C /var/www/my-node-app
