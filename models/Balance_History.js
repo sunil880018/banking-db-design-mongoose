@@ -4,7 +4,7 @@ const BalanceHistorySchema = new Schema(
   {
     balance_date: {
       type: Date,
-      required: true,
+      default: Date.now(),
     },
     account_id: {
       type: Schema.Types.ObjectId,
