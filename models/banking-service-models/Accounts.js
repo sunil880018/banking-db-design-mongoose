@@ -1,4 +1,3 @@
-import { UUID } from "bson";
 import { Schema, model } from "mongoose";
 const AccountSchema = new Schema(
   {
