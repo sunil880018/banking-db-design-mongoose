@@ -4,7 +4,7 @@ const CustomerTypeSchema = new Schema(
     customer_type_code: {
       type: String,
       trim: true,
-      required: true,
+      required: [true , "Please provide customer_type_code"],
     },
   },
   { timestamps: true } //to include createdAt and updatedAt

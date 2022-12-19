@@ -4,7 +4,7 @@ const ProductServiceSchema = new Schema(
     service_code: {
       type: String,
       unique: true, // unique + not null == unique + required
-      required: true,
+      required: [true, 'Please provide service code'],
     },
     merchant_id: {
       type: Schema.Types.ObjectId,

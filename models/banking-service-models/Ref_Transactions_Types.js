@@ -3,7 +3,7 @@ const TransactionTypeSchema = new Schema(
   {
     transaction_type_code: {
       type: String,
-      required: true,
+      required: [true , "Please provide transaction_type_code"],
     },
   },
   { timestamps: true } //to include createdAt and updatedAt

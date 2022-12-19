@@ -5,7 +5,7 @@ const AccountSchema = new Schema(
       type: Number,
       trim: true,
       unique: true, // unique + not null == unique + required
-      required: true,
+      required: [true, 'Please provide account id'],
       min:11,
       max:11,
     },
